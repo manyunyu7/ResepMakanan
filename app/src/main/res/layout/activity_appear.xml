@@ -9,14 +9,15 @@
     tools:context=".Jajanan">
 
         <com.mikhaellopez.circularimageview.CircularImageView
-            android:id="@+id/fotomakanan"
-            android:layout_gravity="center"
+            android:id="@+id/tampilfoto"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:src="@drawable/gorengan"
-            app:civ_border_width="2dp"
+            android:scaleType="centerInside"
             app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
             app:civ_shadow="true"
             app:civ_shadow_color="#8BC34A"
             app:civ_shadow_radius="10" />
@@ -27,7 +28,8 @@
             android:orientation="vertical">
 
                 <TextView
-                    android:layout_marginTop="10dp"
+                    android:id="@+id/tampilnama"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginStart="20dp"
                     android:layout_width="wrap_content"
@@ -38,7 +40,7 @@
                     android:textSize="24dp" />
         </LinearLayout>
 
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="false">
@@ -47,77 +49,79 @@
                     android:orientation="vertical"
                     android:layout_height="match_parent"
                     android:gravity="bottom">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Video Pembuatan"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="24dp" />
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="170dp"
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="15dp"
                             app:cardCornerRadius="15dp">
-                                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:fillViewport="false">
-                                        <LinearLayout
+                                        >
+                                        <VideoView
                                             android:layout_width="match_parent"
-                                            android:orientation="vertical"
                                             android:layout_height="match_parent"
-                                            android:gravity="bottom">
-                                                <TextView
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:fontFamily="@font/roboto_bold"
-                                                    android:text="Video Pembuatan"
-                                                    android:padding="10dp"
-                                                    android:textSize="24dp" />
+                                            android:id="@+id/tampilvideo"
+                                                >
 
-                                                <TextView
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:fontFamily="@font/roboto_bold"
-                                                    android:text="Ditampilkan Disisi"
-                                                    android:padding="10dp"
-                                                    android:textSize="14dp" />
+                                        </VideoView>
 
-                                        </LinearLayout>
-                                </ScrollView>
+
+                                </LinearLayout>
+
+
+
 
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
                             android:layout_marginTop="20dp"
                             android:layout_width="match_parent"
-                            android:layout_height="300dp"
+                            android:layout_height="250dp"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="20dp"
                             app:cardCornerRadius="15dp">
-                                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+                                <ScrollView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:fillViewport="false">
+
                                         <LinearLayout
                                             android:layout_width="match_parent"
-                                            android:orientation="vertical"
                                             android:layout_height="match_parent"
-                                            android:gravity="bottom">
-                                                <TextView
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:fontFamily="@font/roboto_bold"
-                                                    android:text="Resep Makanan"
-                                                    android:textColor="#37AF57"
-                                                    android:padding="10dp"
-                                                    android:textSize="24dp" />
+                                            android:gravity="bottom"
+                                            android:orientation="vertical">
 
                                                 <TextView
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:fontFamily="@font/roboto_bold"
+                                                    android:padding="10dp"
+                                                    android:text="Resep Makanan"
+                                                    android:textColor="#0EBFE9"
+                                                    android:textSize="24dp" />
+
+                                                <TextView
+                                                    android:id="@+id/tampilresep"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:padding="10dp"
                                                     android:text="Ditampilkan Disisi"
                                                     android:textColor="#37AF57"
-                                                    android:padding="10dp"
                                                     android:textSize="14dp" />
 
                                         </LinearLayout>

@@ -29,6 +29,7 @@
                     android:layout_height="match_parent">
 
                         <Button
+                            android:id="@+id/btn_cilok"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -39,6 +40,7 @@
                             android:layout_marginTop="15dp"
                             />
                         <Button
+                            android:id="@+id/btn_batagor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -49,6 +51,7 @@
                             android:layout_marginTop="15dp"
                             />
                         <Button
+                            android:id="@+id/btn_cireng"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -59,6 +62,7 @@
                             android:layout_marginTop="15dp"
                             />
                         <Button
+                            android:id="@+id/btn_cimol"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -69,6 +73,7 @@
                             android:layout_marginTop="15dp"
                             />
                         <Button
+                            android:id="@+id/btn_cibay"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -79,6 +84,7 @@
                             android:layout_marginTop="15dp"
                             />
                         <Button
+                            android:id="@+id/btn_seblakceker"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -89,6 +95,7 @@
                             android:layout_marginTop="15dp"
                             />
                         <Button
+                            android:id="@+id/btn_colenak"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
