@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    android:orientation="vertical"
+    tools:context=".Jajanan">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_image"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/juice"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#8BC34A"
+            app:civ_shadow_radius="10" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Cendol"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Es Lilin"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Sekoteng"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Goyobod"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Es Oyen"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    android:orientation="vertical"
+    tools:context=".Jajanan">
+
+<ImageView
+    android:background="@drawable/food3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Karedok"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Empal Gepuk Daging"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Nasi Liwet Sunda"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Mie Kocok"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Tumis Genjer Oncom"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Urap Sayuran"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Sayur Lodeh Sunda"
+                            android:background="@drawable/button_style1"
+                            android:layout_marginTop="15dp"
+                            />
+
+
+                </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
