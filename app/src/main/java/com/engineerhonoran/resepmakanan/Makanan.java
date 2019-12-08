@@ -99,7 +99,7 @@ Button bkaredok,bempal,bliwet,bkocok,btumis,burap,blodeh;
 
     private void init(){
         bkaredok = (Button) findViewById(R.id.btnkaredok);
-        bempal = (Button) findViewById(R.id.btnurap);
+        bempal = (Button) findViewById(R.id.btnempal);
         bliwet = (Button) findViewById(R.id.btnliwet);
         bkocok = (Button) findViewById(R.id.btnmiekocok);
         btumis = (Button) findViewById(R.id.btntumis);

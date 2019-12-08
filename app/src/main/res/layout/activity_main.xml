@@ -6,280 +6,330 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradientbg"
     android:orientation="vertical"
+    android:layout_gravity="center"
     android:padding="24dp"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_bolditalic"
-            android:text="Kumpulan Resep"
-            android:textColor="#FF9800"
-            android:textSize="24dp"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:fontFamily="@font/roboto_bolditalic"
-            android:text="Masakan"
-            android:textColor="#fff"
-            android:textSize="24dp"
-
-            />
-
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_regular"
-        android:text="Klik kategori dibawah untuk melihat menu"
-        android:textColor="#fff"
-        android:textSize="14dp">
-
-    </TextView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="16dp"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp">
-
-        <LinearLayout
-            android:id="@+id/btn_jajanan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:fillViewport="false">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
-            android:padding="14dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:fontFamily="@font/roboto_bolditalic"
+                    android:text="Kumpulan Resep"
+                    android:textColor="#FF9800"
+                    android:textSize="24dp"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="Jajanan"
-                        android:textColor="#fdb501"
-                        android:textSize="24dp" />
+                    />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/roboto_bolditalic"
+                    android:text="Masakan"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Klik kategori dibawah untuk melihat menu"
+                android:textColor="#fff"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_jajanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
 
                     <LinearLayout
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_height="wrap_content">
-
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <TextView
-                                android:layout_gravity="center"
                                 android:layout_width="wrap_content"
-                                android:textSize="20dp"
-                                android:textColor="#6A90B5"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:layout_height="wrap_content"
-                                android:text="Tersedia 7 Resep" />
+                                android:text="Jajanan"
+                                android:textColor="#fdb501"
+                                android:textSize="24dp" />
 
-                            <TextView
-                                android:layout_gravity="center"
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
                                 android:layout_width="wrap_content"
-                                android:textSize="14dp"
-                                android:textColor="#DF6A90B5"
-                                android:fontFamily="@font/roboto_regular"
                                 android:layout_height="wrap_content"
-                                android:text="Jajanan" />
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="20dp"
+                                        android:textColor="#6A90B5"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tersedia 7 Resep" />
+
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="14dp"
+                                        android:textColor="#DF6A90B5"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jajanan" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginLeft="16dp"
-                            android:layout_height="wrap_content"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="-8dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/food1" />
+                        </RelativeLayout>
                     </LinearLayout>
-
-
                 </LinearLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+            </androidx.cardview.widget.CardView>
 
-                    <ImageView
-                        android:layout_alignParentRight="true"
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="-8dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/food1" />
-                </RelativeLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp">
-
-        <LinearLayout
-            android:id="@+id/btn_makanan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="14dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                app:cardCornerRadius="8dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/btn_makanan"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="Makanan"
-                        android:textColor="#FF5832"
-                        android:textSize="24dp" />
-
+                    android:orientation="vertical"
+                    android:padding="14dp">
 
                     <LinearLayout
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_height="wrap_content">
-
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <TextView
-                                android:layout_gravity="center"
                                 android:layout_width="wrap_content"
-                                android:textSize="20dp"
-                                android:textColor="#6A90B5"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:layout_height="wrap_content"
-                                android:text="Tersedia 7 Resep" />
+                                android:text="Makanan"
+                                android:textColor="#FF5832"
+                                android:textSize="24dp" />
 
-                            <TextView
-                                android:layout_gravity="center"
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
                                 android:layout_width="wrap_content"
-                                android:textSize="14dp"
-                                android:textColor="#DF6A90B5"
-                                android:fontFamily="@font/roboto_regular"
                                 android:layout_height="wrap_content"
-                                android:text="Makanan" />
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="20dp"
+                                        android:textColor="#6A90B5"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tersedia 7 Resep" />
+
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="14dp"
+                                        android:textColor="#DF6A90B5"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:layout_height="wrap_content"
+                                        android:text="Makanan" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+
                         </LinearLayout>
 
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="-8dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/food2" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:orientation="horizontal">
+
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginLeft="16dp"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+
 
 
                     </LinearLayout>
@@ -287,149 +337,147 @@
 
                 </LinearLayout>
 
-                <RelativeLayout
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_minuman"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_alignParentRight="true"
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="-8dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/food2" />
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-
-                </LinearLayout>
-
-
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp">
-
-        <LinearLayout
-            android:id="@+id/btn_minuman"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="14dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="Minuman"
-                        android:textColor="#37AF57"
-                        android:textSize="24dp" />
-
+                    android:orientation="vertical"
+                    android:padding="14dp">
 
                     <LinearLayout
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/rate" />
+                            android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="Minuman"
+                                android:textColor="#37AF57"
+                                android:textSize="24dp" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rate"
-                            android:layout_marginLeft="2dp" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rate"
+                                    android:layout_marginLeft="2dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="20dp"
+                                        android:textColor="#6A90B5"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tersedia 5 Resep" />
+
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="14dp"
+                                        android:textColor="#DF6A90B5"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:layout_height="wrap_content"
+                                        android:text="Minuman" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/profile_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="-8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/juice"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="#FFFFFF"
+                                app:civ_shadow="true"
+                                app:civ_shadow_color="#FFFFFF"
+                                app:civ_shadow_radius="10" />
+                        </RelativeLayout>
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="match_parent"
                         android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="16dp"
                         android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
 
-                            <TextView
-                                android:layout_gravity="center"
-                                android:layout_width="wrap_content"
-                                android:textSize="20dp"
-                                android:textColor="#6A90B5"
-                                android:fontFamily="@font/roboto_bold"
-                                android:layout_height="wrap_content"
-                                android:text="Tersedia 5 Resep" />
-
-                            <TextView
-                                android:layout_gravity="center"
-                                android:layout_width="wrap_content"
-                                android:textSize="14dp"
-                                android:textColor="#DF6A90B5"
-                                android:fontFamily="@font/roboto_regular"
-                                android:layout_height="wrap_content"
-                                android:text="Minuman" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginLeft="16dp"
-                            android:layout_height="wrap_content"/>
 
 
                     </LinearLayout>
@@ -437,42 +485,13 @@
 
                 </LinearLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.mikhaellopez.circularimageview.CircularImageView
-                        android:id="@+id/profile_image"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="-8dp"
-                        android:layout_gravity="center"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/juice"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FFFFFF"
-                        app:civ_shadow="true"
-                        app:civ_shadow_color="#FFFFFF"
-                        app:civ_shadow_radius="10" />
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginLeft="6dp"
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-
-
-
-
-            </LinearLayout>
-
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+    </ScrollView>
 
-    </androidx.cardview.widget.CardView>
+
+
 
 
 </LinearLayout>

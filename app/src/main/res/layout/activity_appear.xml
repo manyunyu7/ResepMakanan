@@ -50,40 +50,34 @@
                     android:layout_height="match_parent"
                     android:gravity="bottom">
                         <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_bold"
-                            android:text="Video Pembuatan"
+                            android:text="Cara Pembuatan"
                             android:layout_marginRight="20dp"
                             android:layout_marginLeft="20dp"
-                            android:textSize="24dp" />
+                            android:textSize="20dp" />
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="170dp"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="15dp"
-                            app:cardCornerRadius="15dp">
                                 <LinearLayout
+                                    android:gravity="center"
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                        >
+                                    android:layout_height="170dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginEnd="15dp">
                                         <VideoView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:id="@+id/tampilvideo"
-                                                >
-
+                                            >
                                         </VideoView>
-
-
                                 </LinearLayout>
 
 
 
 
-                        </androidx.cardview.widget.CardView>
+
 
                         <androidx.cardview.widget.CardView
                             android:layout_marginTop="20dp"
@@ -111,7 +105,7 @@
                                                     android:fontFamily="@font/roboto_bold"
                                                     android:padding="10dp"
                                                     android:text="Resep Makanan"
-                                                    android:textColor="#0EBFE9"
+                                                    android:textColor="#FF9800"
                                                     android:textSize="24dp" />
 
                                                 <TextView

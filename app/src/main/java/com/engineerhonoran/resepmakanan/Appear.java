@@ -9,6 +9,7 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -39,6 +40,9 @@ VideoView tpvideo;
             tpresep.setText(datacursor.getString(datacursor.getColumnIndex("resep")));
             tpfoto.setImageResource(datacursor.getInt(datacursor.getColumnIndex("foto")));
             tpvideo.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + datacursor.getInt(datacursor.getColumnIndex("video"))));
+            tpvideo.setMediaController(new MediaController(this));
+            tpvideo.requestFocus();
+            tpvideo.start();
             tpvideo.start();
             datacursor.close();
         }else {

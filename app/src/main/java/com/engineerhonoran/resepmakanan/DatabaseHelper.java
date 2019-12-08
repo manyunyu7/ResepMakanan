@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     // Database Version
-    private static final int DATABASE_VERSION = 10;
+    private static final int DATABASE_VERSION = 12;
 
     // Database Name
     private static final String DATABASE_NAME = "db_resep";
@@ -56,7 +56,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "•\t1 liter santan yg telah dibuat dari 1 butir parutan kelapa\n" +
                 "•\t5 lembar daun dari pandan\n" +
                 "•\t1/2 sendok teh garam (secukupnya)\n" +
-                "•\tSeluruhnya bahan dimasak bersamaan sampai kemudian mendidih\n",R.drawable.imgcendol+"",""+R.raw.contohvideo,""+1});
+                "•\tSeluruhnya bahan dimasak bersamaan sampai kemudian mendidih\n",R.drawable.imgcendol+"",""+R.raw.resepurap,""+1});
 //Es Lilin
          db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Es Lilin","Bahan Bahan Cara Membuat Es Lilin:\n" +
                  "•\t150 gram susu bubuk rasa \n" +
@@ -69,7 +69,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                  "1.\tAmbil Kalau Anda tidak punya shaker, gunakan saja tumbler atau gelas bertutup saja. Masukkan susu bubuk, air gula, susu cair, dan es serut dalam shaker.\n" +
                  "2.\tTutup shaker dan kocok-kocok dengan gerakan cepat.\n" +
                  "3.\tTuangkan milkshake ke dalam cetakan atau plastik es.\n" +
-                 "4.\tTunggu membeku dan sajikan,\n",R.drawable.img_eslilin+"",""+R.raw.contohvideo,""+2});
+                 "4.\tTunggu membeku dan sajikan,\n",R.drawable.img_eslilin+"",""+R.raw.resepurap,""+2});
 //Sakoteng
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Sakoteng","Sekoteng adalah minuman hangat yang tentunya sangat enak dan berkhasiat tinggi. Minuman asli indonesia ini sangat nikmat disajikan dimalam hari dan saat hujan tiba. Sekoteng ini tentunya menggunakan racikan bahan dan rempah-rempah alami asli indonesia. resep sekoteng terdiri dari air rebusan jahe dan rempah lainnya.\n" +
                 "Bahan lain yang biasanya dicampur ke dalam minuman sekoteng adalah kacang hijau, kacang tanah, pacar cina, dan potongan roti. Sekoteng biasa dihidangkan pada malam hari. Sekoteng biasanya dijual keliling dengan menggunakan gerobak pikul. Satu sisi untuk panci air jahe beserta kompornya sedangkan sisi lain adalah tempat bahan campuran dan tempat mempersiapkan sekoteng.\n" +
@@ -90,7 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "2.\tRebus kacang hijau hingga matang tapi tidak pecah. Angkat.\n" +
                 "3.\tSiapkan 5 mangkuk saji, letakkan dan susunan kacang hijau, kolang-kaling, roti tawar, delima merah, dan air jahe.\n" +
                 "4.\tMasukkan es serut dan sirop vanilla.\n" +
-                "5.\tSajikan segera.\n",R.drawable.img_sekoteng+"",""+R.raw.contohvideo,""+3});
+                "5.\tSajikan segera.\n",R.drawable.img_sekoteng+"",""+R.raw.resepurap,""+3});
         //Goyobod
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Goyobod","SGoyobod adalah minuman khas Priangan. Goyobod sendiri adalah tepung sagu aren yang diproses seperti agar-agar. Dicampur macam-macam tambahan seperti sekoteng, alpukat, yang dicampur dalam santan kelapa dan es serut dengan pemanis sirup gula dan susu kental manis serta tambahan roti manis.\n" +
                 "Bahan\n" +
@@ -118,7 +118,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "3. Tuang adonan hunkue ke dalam loyang/mangkuk tahan panas. Biarkan hingga dingin. Keluarkan dari loyang/mangkuk. Potong-potong bentuk dadu ukuran 1 cm." + "\n" +
                 "4. Kuah santan: Rebus santan, gula merah, garam, dan daun pandan sambil ditimba-timba hingga mendidih. Angkat dari atas api, saring." + "\n" +
                 "5. Siapkan mangkuk/gelas saji. Taruh 2 – 3 sdm goyobod dalam mangkuk/gelas. Tambahkan kelapa muda dan avokad. Tuangi kuah santan. Tambahkan es serut/es batu. Sajikan\n",
-                R.drawable.img_goyobod+"",""+R.raw.contohvideo,""+4});
+                R.drawable.img_goyobod+"",""+R.raw.resepurap,""+4});
 //Es Oyen
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Es Oyen","Bahan-Bahan\n" +
                 "•\t10 potong nangka, iris dadu\n" +
@@ -135,7 +135,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "2. Tuang beberapa sendok gula cair.\n" +
                 "3. Tambahkan es batu.\n" +
                 "4. Tambahkan sagu mutiara dan larutan kental manis.\n" +
-                "\n",R.drawable.img_esoyen+"",""+R.raw.contohvideo,""+5});
+                "\n",R.drawable.img_esoyen+"",""+R.raw.resepurap,""+5});
         //cilok 7
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Cilok","Jajanan ala Sunda yang satu ini paling banyak dijual oleh gerobak-gerobak yang mangkal di pinggir jalan. Ternyata pembuatannya cukup mudah. Yuk, intip resepnya!\n" +
                 "Bahan membuat cilok:\n" +
@@ -156,7 +156,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "2.\tMasukkan tepung kanji dan daun bawang, aduk rata hingga kalis.\n" +
                 "3.\tSiapkan air untuk merebus yang sudah diberi garam dan sedikit minyak.\n" +
                 "4.\tBentuk adonan menjadi bulatan (bisa diisi gajih, abon atau sosis) dan masukkan ke dalam air mendidih. Rebus hingga mengapung dan berwarna mengkilat, angkat lalu tiriskan.\n" +
-                "5.\tCara membuat sambal kacangnya, cukup haluskan semua bahan, lalu masak hingga mengental.\n",R.drawable.img_cilok+"",""+R.raw.contohvideo,""+6});
+                "5.\tCara membuat sambal kacangnya, cukup haluskan semua bahan, lalu masak hingga mengental.\n",R.drawable.img_cilok+"",""+R.raw.resepurap,""+6});
 //Batagor 8
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Batagor","Penjual batagor bisa ditemukan dimanapun, ada yang keliling ada juga yang punya kedai sendiri. Tapi biasanya, batagor yang dijual ini rasa ataupun teksturnya kurang nendang. Makanya, bikin sendiri adalah solusinya.\n" +
                 "Bahan batagor:\n" +
@@ -188,7 +188,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "4.\tSiapkan kulit pangsit, isi dengan adonan lalu lipat, rekatkan dengan telur.\n" +
                 "5.\tGoreng dalam minyak panas hingga matang.\n" +
                 "6.\tUntuk bumbunya, campur semua bahan lalu tumis hingga mengental\n" +
-                "Sajikan batagor dengan siraman bumbu dan telur rebus.\n",R.drawable.img_batagor+"",""+R.raw.contohvideo,""+7});
+                "Sajikan batagor dengan siraman bumbu dan telur rebus.\n",R.drawable.img_batagor+"",""+R.raw.resepurap,""+7});
 //Cireng 8
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Cireng","Siapa sih yang nggak suka cireng? Cireng original saja enak, apalagi cireng dengan variasi isi? Wah, bisa kalap!\n" +
                 "Bahan yang dibutuhkan:\n" +
@@ -206,7 +206,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "2.\tTuang air panas sedikit demi sedikit ke dalam campuran tepung, uleni hingga kalis.\n" +
                 "3.\tAmbil adonan lalu isi dengan keju, bentuk sesuai selera.\n" +
                 "4.\tPanaskan minyak diatas api sedang lalu goreng cireng hingga matang.\n" +
-                "Cireng isi bisa disajikan dengan saus atau sambal kacang.\n",R.drawable.img_cireng+"",""+R.raw.contohvideo,""+8});
+                "Cireng isi bisa disajikan dengan saus atau sambal kacang.\n",R.drawable.img_cireng+"",""+R.raw.resepurap,""+8});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Cimol","Biasanya cimol banyak dijumpai di pedangan gerobak yang uga menjajakan cilok dan cireng. Tiga jajanan ini memang sepaket. Kamu pasti kerap menjumpai cimol yang ‘aci doang’, jadi ketika sudah nggak hangat lagi, rasanya alot dan nggak enak. Makanya, bikin sendiri aja!\n" +
                 "Bahan yang diperlukan:\n" +
@@ -221,7 +221,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "•\tMasukan sedikit demi sedikit air panas hingga bahan adonan tadi berbentuk kenyal dan pulen, aduk menggunakan sendok atau spatula hingga merata.\n" +
                 "•\tBentuk adonan menjadi bulatan sebesar kelereng atau sesuai selera lalu goreng hingga mengembang dan matang.\n" +
                 "Cimol bisa disajikan dengan bubuk cabai ataupun bumbu kacang.\n" +
-                "\n",R.drawable.img_cimol+"",""+R.raw.contohvideo,""+9});
+                "\n",R.drawable.img_cimol+"",""+R.raw.resepurap,""+9});
    //Cibay
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Cibay","Jajanan khas Tasikmalaya ini juga biasa disebut Cireng Lebay atau Aci Ngambay. Gorengan enak yang berisi daging ayam ini menjadi populer di kalangan masyarakat Sunda, namun belum banyak tersebar di daerah Jawa.\n" +
                 "Bahan yang diperlukan:\n" +
@@ -243,7 +243,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "1.\tCampur dan aduk rata tepung aci, garam, merica dan kaldu bubuk dalam panci. Masukkan air, bawang putih, bawang merah, daun bawang, dan suwiran ayam, kemudian aduk hingga rata dan nggak ada yang menggumpal. Masak di atas api kecil sambil terus diaduk-aduk hingga adonan berwarna bening dan kental, matikan api.\n" +
                 "2.\tAmbil 1 lembar kulit lumpia, tuang 1 sendok makan adonan aci tadi, lalu taburi dengan cabe rawit cincang secukupnya. Lipat berbentuk kotak atau sesuai selera dan lem menggunakan adonan terigu sebagai perekat. Lakukan hingga adonan habis.\n" +
                 "3.\tPanaskan minyak, goreng hingga matang dan berwarna kekuningan, lalu angkat dan tiriskan.\n" +
-                "Sajikan Cibay selagi panas dengan taburan bumbu tabur cabe untuk mendapatkan sensasi yang lebih pedas.\n",R.drawable.img_cibay+"",""+R.raw.contohvideo,""+10});
+                "Sajikan Cibay selagi panas dengan taburan bumbu tabur cabe untuk mendapatkan sensasi yang lebih pedas.\n",R.drawable.img_cibay+"",""+R.raw.resepurap,""+10});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Seblak Ceker","Bahan:\n" +
                 "- 2 genggam kerupuk, redam di air biasa 2 jam\n" +
@@ -267,7 +267,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Tambahkan bakso, ceker, kerupuk yang sudah direndam, garam, gula, lada, saos tiram, kaldu bubuk. Masak sebentar.\n" +
                 "- Tambah air kaldu, masak hingga mendidih.\n" +
                 "- Masukkan daun sawi, daun bawang, dan cabai rawit iris, masak hingga sayuran matang.\n" +
-                "- Angkat dan sajikan.\n",R.drawable.img_seblakceker+"",""+R.raw.contohvideo,""+11});
+                "- Angkat dan sajikan.\n",R.drawable.img_seblakceker+"",""+R.raw.resepurap,""+11});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Colenak","Bahan yang dibutuhkan sebagai bahan utama :\n" +
                 "\uF0A7\tTape singkong sebanyak 500 gram\n" +
@@ -286,7 +286,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "5.\tMasukan garam dapur halus aduk hingga rata dan gula merah larut.\n" +
                 "6.\tTambahkan kelapa parut aduk rata dan kuah mengental. Angkat.\n" +
                 "7.\tLetakan tape singkong dan tata pada piring saji.\n" +
-                "8.\tKucuri saus gula kelapa dan colenak Bandung siap di sajikan.\n",R.drawable.img_colenak+"",""+R.raw.contohvideo,""+12});
+                "8.\tKucuri saus gula kelapa dan colenak Bandung siap di sajikan.\n",R.drawable.img_colenak+"",""+R.raw.resepurap,""+12});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Karedok","Bahan:\n" +
                 "- 5 buah kacang panjang, iris tipis\n" +
@@ -310,7 +310,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Lalu tambahkan kacang tanah dan air asam jawa, haluskan dan beri sedikit air jika perlu.\n" +
                 "- Masukkan semua sayur, aduk hingga rata.\n" +
                 "- Sajikan dengan kerupuk.\n" +
-                "\n",R.drawable.img_karedok+"",""+R.raw.contohvideo,""+13});
+                "\n",R.drawable.img_karedok+"",""+R.raw.resepurap,""+13});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Empal Gepuk Daging","Bahan :\n" +
                 "- 1 kg daging sapi, potong cuci bersih .\n" +
@@ -335,7 +335,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Jika daging sudah setengah empuk, masukan santan kental. Masak terus.\n" +
                 "- Setelah santan menyusut, angkat daging lalu tumbuk hingga seratnya terlihat jelas.\n" +
                 "- Lalu goreng sebentar saja.\n" +
-                "- Sajikan dengan taburan bawang goreng, sayur asem dan sambal terasi\n",R.drawable.img_gepuk+"",""+R.raw.contohvideo,""+14});
+                "- Sajikan dengan taburan bawang goreng, sayur asem dan sambal terasi\n",R.drawable.img_gepuk+"",""+R.raw.resepurap,""+14});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Nasi Liwet Sunda","Bahan:\n" +
                 "- 6 gelas beras\n" +
@@ -356,7 +356,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Kemudian tambahkan petai dan cabai rawit. Tumis sebentar lalu matikan kompor.\n" +
                 "- Masukkan tumisan bumbu tersebut ke dalam beras beserta minyaknya, beri air selayaknya kita mau masak nasi, aduk.\n" +
                 "- Masak seperti masak nasi biasa.\n" +
-                "- Kalau sudah matang, biarkan sebentar selama 5 menit, lalu aduk nasinya, tutup kembali biarkan selama 5 menit. Taburi dengan teri medan. Nasi liwet siap disajikan.\n",R.drawable.img_liwet+"",""+R.raw.contohvideo,""+15});
+                "- Kalau sudah matang, biarkan sebentar selama 5 menit, lalu aduk nasinya, tutup kembali biarkan selama 5 menit. Taburi dengan teri medan. Nasi liwet siap disajikan.\n",R.drawable.img_liwet+"",""+R.raw.resepurap,""+15});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Mie Kocok","Bahan:\n" +
                 "- 400 g mi basah gepeng, siap pakai, cuci, tiriskan\n" +
@@ -382,7 +382,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Masukkan kikil, pala, merica, garam, gula, dan tumisan bawang putih. Rebus hingga mendidih.\n" +
                 "- Penyajian: Taruh mi dalam mangkuk saji, tambahkan taoge, siram dengan kuah panas beserta kikil dan sumsumnya.\n" +
                 "- Taburi daun bawang dan bawang goreng. Tambahkan air jeruk limau. Sajikan selagi hangat dengan pelengkap sambal cabai rawit.\n",
-                R.drawable.img_kocok+"",""+R.raw.contohvideo,""+16});
+                R.drawable.img_kocok+"",""+R.raw.resepurap,""+16});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Tumis Genjer Oncom","Bahan:\n" +
                 "- 400 g mi basah gepeng, siap pakai, cuci, tiriskan\n" +
@@ -408,7 +408,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Masukkan kikil, pala, merica, garam, gula, dan tumisan bawang putih. Rebus hingga mendidih.\n" +
                 "- Penyajian: Taruh mi dalam mangkuk saji, tambahkan taoge, siram dengan kuah panas beserta kikil dan sumsumnya.\n" +
                 "- Taburi daun bawang dan bawang goreng. Tambahkan air jeruk limau. Sajikan selagi hangat dengan pelengkap sambal cabai rawit.\n",
-                R.drawable.img_tumis+"",""+R.raw.contohvideo,""+17});
+                R.drawable.img_tumis+"",""+R.raw.resepurap,""+17});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Urap Sayuran","Bahan :\n" +
                 "- 2 ikat genjer\n" +
@@ -431,7 +431,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "- Tambahkan garam gula pasir dan kaldu bubuk secukupnya ,tes rasa\n" +
                 "- Kemudian masukkan genjer aduk sebentar saja, supaya genjer layu dan sedikit kering.\n" +
                 "- Angkat dan sajikan\n",
-                R.drawable.img_urap+"",""+R.raw.contohvideo,""+18});
+                R.drawable.img_urap+"",""+R.raw.resepurap,""+18});
 
         db.execSQL("INSERT INTO tb_resep VALUES (?,?,?,?,?)",new String[]{"Sayur Lodeh Sunda","Masih ada resep masakan sunda yang lain loh. Berikut nya adalah sayur lodeh sunda. Masakan ini punya kuah sayur yang terlihat putih, dan berasa gurih yang berasal dari terasi dan kemiri. Supaya lebih nikmat wal mantap, sayur lodeh ini cocok jika di makan dengan lauk ikan asin yang masih hangat. Yummy.\n" +
                 "Bumbu Halus :\n" +
@@ -467,7 +467,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "\uF0A7\tTambahkan air dan santan kental.\n" +
                 "\uF0A7\tMasak terus hingga sayuran terasa empuk dan matang.\n" +
                 "\uF0A7\tMasakan siap untuk dihidangkan.\n",
-                R.drawable.img_lodeh+"",""+R.raw.contohvideo,""+19});
+                R.drawable.img_lodeh+"",""+R.raw.resepurap,""+19});
 
 
     }
