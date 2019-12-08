@@ -13,10 +13,9 @@
             android:layout_gravity="center"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:scaleType="fitXY"
             android:src="@drawable/juice"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"
+            app:civ_border_color="#000000"
             app:civ_shadow="true"
             app:civ_shadow_color="#8BC34A"
             app:civ_shadow_radius="10" />
@@ -81,11 +80,5 @@
                             />
                 </LinearLayout>
         </ScrollView>
-
-
-
-
-
-
 
 </LinearLayout>
